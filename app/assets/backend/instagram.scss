@@ -1,0 +1,145 @@
+.backend_instagram {
+  #add_new {
+    .options {
+      margin-bottom: 30px;
+      overflow: hidden;
+      .button {
+        float: left;
+        margin-right: 10px;
+        &.unselected {
+          background: white;
+          border: 2px solid rgb(57, 178, 103);
+          color: rgb(57, 178, 103);
+          padding: 9px 24px;
+        }
+        &:hover {
+          background: rgb(57, 178, 103);
+          color: white;
+        }
+      }
+    }
+    .type {
+      &.hidden {
+        display: none;
+      }
+    }
+  }
+  .left, .right {
+    .user_list, .tag_list {
+      margin-bottom: 40px;
+    }
+    .instagram_gallery {
+      overflow: hidden;
+      &.pending {
+        .instagram_panel {
+          .controls {
+            .yes, .no { display: block; }
+            .revive, .unpublish, .feature, .unfeature {
+              display: none;
+            }
+          }
+        }
+      }
+      &.rejected {
+        .instagram_panel {
+          .controls {
+            .yes, .no, .unpublish, .feature, .unfeature { display: none; }
+            .revive { display: block; }
+          }
+        }
+      }
+      &.published {
+        .instagram_panel {
+          .controls {
+            .yes, .revive, .feature, .unfeature { display: none; }
+            .unpublish { display: block; }
+          }
+        }
+      }
+      &.unpublished {
+        .instagram_panel {
+          .controls {
+            .revive, .feature, .unfeature, .unpublish { display: none; }
+            .yes { display: block; }
+          }
+        }
+      }
+      &.feed {
+        .instagram_panel {
+          .controls {
+            .yes, .no, .revive, .unpublish, .unfeature {
+              display: none;
+            }
+            .feature {
+              display: block;
+            }
+          }
+          &.featured {
+            .feature {
+              display: none;
+            }
+            .unfeature {
+              display: block;
+            }
+          }
+        }
+      }
+      .instagram_panel {
+        @include box_sizing_inset;
+        width: 25%;
+        position: relative;
+        float: left;
+        padding: 20px 15px;
+        @include opacity(1.0, 100%);
+        @include transition_opacity(0.4s);
+        &.featured {
+          background: yellow;
+        }
+        &:hover {
+          .controls {
+            display: inline;
+          }
+        }
+        &.new {
+          @include opacity(0.0, 0%);
+        }
+        .controls {
+          display: none;
+          position: absolute;
+          text-align: right;
+          padding: 10px;
+          background-color: $white;
+          right: 22px;
+          .yes, .no {
+            a {
+              display: block;
+            }
+          }
+          .unpublish, .revive { display: none; }
+          .yes {
+          }
+          .no {
+          }
+        }
+        .img {
+          cursor: pointer;
+          img {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+  .right {
+    .instagram_gallery {
+      overflow: hidden;
+      .instagram_panel {
+        width: 50%;
+        padding: 15px 10px;
+      }
+    }
+  }
+}
+.see_more {
+  display: none;
+}

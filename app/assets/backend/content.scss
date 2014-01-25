@@ -1,0 +1,273 @@
+.backend_content,
+.backend_articles,
+.backend_slideshows,
+.backend_tags,
+.backend_article_categories {
+  
+  .right {
+    .slide_holder {
+      &.active {
+        position: fixed;
+        width: 245px;
+      }
+    }
+  }
+  
+  .left {
+    
+    .pref_site_title a,
+    .pref_company_name a,
+    .edit_section a.master_edit,
+    .edit_section.standalone .edit_container {
+      display: block;
+      padding: 5px 20px 5px 20px;
+      margin-bottom: 30px;
+      color: #333;
+      text-decoration: none;
+      
+      h1 {
+        .note {
+          margin-left: 5px;
+          font-weight: normal;
+          font-size: 11px;
+          line-height: 14px;
+        }
+        .button {
+          padding: 4px 6px 4px 6px;
+          line-height: 12px;
+          float: right;
+        }
+      }
+      
+      p, ul, ol {
+        font-size: 20px;
+        line-height: 26px;
+      }
+      
+      &:hover {
+        background-color: #faffd0;
+      }
+      &:active {
+        color: #fff;
+        background-color: #ffcc33;
+      }
+    }
+    .edit_section.home_image {
+      margin-left: 22px;
+      margin-bottom: 30px;
+    }
+    .edit_section.standalone .edit_container {
+      cursor: pointer;
+      
+      .master_edit {
+        display: block;
+        position: absolute;
+        text-indent: -9999px;
+        background: none;
+      }
+    }
+    .pref_site_title form,
+    .pref_company_name form,
+    .edit_section form {
+      padding: 5px 20px 5px 20px;
+      margin-bottom: 30px;
+      background-color: #fcfdef;
+      overflow: hidden;
+      
+      h1 {
+        .note {
+          margin-left: 5px;
+          font-weight: normal;
+          font-size: 11px;
+          line-height: 14px;
+        }
+      }
+      
+      textarea,
+      input[type="text"],
+      select {
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        font-size: 20px;
+        line-height: 26px;
+        background: none;
+        border: 0;
+        
+        &:hover,
+        &:focus {
+          @include shadow(0, 0, 0, 0, rgba(255,255,255,0))
+        }
+      }
+      p.input {
+        border-bottom: 1px solid #ffcc33;
+      }
+      .save {
+        float: right;
+      }
+      
+      .ghost {
+        position: absolute;
+        margin-top: -40px;
+        margin-left: 0;
+        font-size: 20px;
+        color: #b5b5b5;
+        line-height: 26px;
+        float: left;
+      }
+      
+      .markItUpHeader {
+        position: absolute;
+        margin-left: 795px;
+        margin-top: -60px;
+        
+        &.active {
+          position: fixed;
+          width: 60px;
+        }
+        
+        ul {
+          margin: 0;
+          padding: 0;
+
+          li {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+
+            a {
+              margin: 0;
+              padding: 0;
+            }
+            &.markItUpButton a {
+              display: block;
+              padding: 4px;
+              margin-bottom: 2px;
+              font-size: 14px;
+              line-height: 14px;
+              font-weight: bold;
+              text-align: center;
+              text-decoration: none;
+              color: #666;
+              background-color: #eaeaea;
+              @include border_radius(4px);
+              clear: both;
+              
+              &:hover {
+                color: #fff;
+                background-color: #ffcc33;
+              }
+              &:active {
+                background-color: #048FDF;
+              }
+            }
+            &.markItUpButton2 a {
+              font-style: italic;
+            }
+            &.markItUpButton1 a,
+            &.markItUpButton2 a,
+            &.markItUpButton3 a,
+            &.markItUpButton4 a {
+              width: 20px;
+            }
+            &.markItUpSeparator {
+              content: '';
+              margin: 8px 0 8px 0;
+              text-indent: -9999px;
+              width: 28px;
+              height: 1px;
+              background-color: #eaeaea;
+            }
+          }
+        }
+      }
+    }
+    .pref_twitter_username form,
+    .sand_box_item_twitter_username form {
+      input[type="text"] {
+        padding-left: 18px;
+        margin-right: -18px;
+      }
+    }
+    .pref_facebook_vanity_name form,
+    .sand_box_item_facebook_vanity_name form,
+    .pref_instagram_username form,
+    .sand_box_item_instagram_username form,
+    .reel_video form {
+      input[type="text"] {
+        padding-left: 194px;
+        margin-right: -194px;
+      }
+    }
+    .pref_site_email form,
+    .pref_site_phone form {
+      input[type="text"] {
+        padding-left: 178px;
+        margin-right: -178px;
+      }
+    }
+    .pref_google_plus form,
+    .sand_box_item_google_plus form {
+      input[type="text"] {
+        padding-left: 203px;
+        margin-right: -203px;
+      }
+    }
+    .pref_linkedin_username form {
+      input[type="text"] {
+        padding-left: 258px;
+        margin-right: -258px;
+      }
+    }
+    .pref_site_emails form {
+      input[type="text"] {
+        padding-left: 168px;
+        margin-right: -168px;
+      }
+    }
+    .pref_headquarters_info form,
+    .pref_sanfrancisco_info form,
+    .pref_boulder_info form,
+    .pref_boston_info form {
+      input[type="text"] {
+        padding-left: 108px;
+        margin-right: -108px;
+      }
+    }
+    .home_video form {
+      input[type="text"] {
+        padding-left: 164px;
+        margin-right: -164px;
+      }
+    }
+  }
+  
+  &.preferences {
+    
+  }
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

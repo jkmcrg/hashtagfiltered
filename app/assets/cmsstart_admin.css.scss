@@ -1,0 +1,19 @@
+/* ================================================================================================== */
+/* = ++++++++++++++++++++++++++++++++++++++ CMS Start Backend +++++++++++++++++++++++++++++++++++++ = */
+/* ================================================================================================== */
+
+// Import the shared styles
+@import "shared/mixins";
+@import "shared/color_defaults";
+@import "backend/scaffold_base";
+@import "backend/assets";
+@import "backend/devise";
+@import "backend/dashboard";
+@import "backend/slideshows";
+@import "backend/users";
+@import "backend/content";
+@import "backend/tags";
+@import "backend/articles";
+@import "backend/article_categories";
+@import "backend/article_submissions";
+@import "backend/instagram";

@@ -1,0 +1,102 @@
+.backend_article_categories {
+  
+  .right {
+    .slide_holder {
+      &.active {
+        position: fixed;        
+      }
+    }
+    
+    p a.button {
+      width: 188px;
+      
+      &.current {
+        @include opacity(0.5,50);
+      }
+      &.small {
+        width: auto;
+      }
+    }
+  }
+  
+  &.index {
+    .left {
+      ul {
+        font-size: 20px;
+        line-height: 26px;
+        li {
+          margin: 6px;
+          padding: 3px;
+        }
+        &#sortable {
+          li {
+            width: 325px;
+            border-right: 2px dotted #ccc;
+            
+            &:hover {
+              cursor: move;
+              background-color: #eaeaea;
+            }
+          }
+        }
+      }
+    }
+  }
+  
+  &.detail {
+    .left {
+      .bio_linkedin_username form {
+        input[type="text"] {
+          padding-left: 210px;
+          margin-right: -210px;
+        }
+      }
+      .bio_question_1 form,
+      .bio_question_2 form {
+        input[type="text"] {
+          padding-left: 108px;
+          margin-right: -108px;
+        }
+      }
+      .sticky_posts {
+        form {
+          .post {
+            width: 400px;
+            float: left;
+            
+            select {
+              font-size: 18px;
+              width: 245px;
+            }
+            label {
+              display: inline;
+            }              
+          }
+        }
+      }
+    }
+  }
+  
+  &.image {
+    .left {
+      #image {
+        ul {
+          margin: 0;
+          padding: 32px 0 0 0;
+          li {
+            margin: 0 32px 32px 0;
+            padding: 0;
+            list-style-type: none;
+            float: left;
+            
+            .delete {
+              position: absolute;
+              margin: -36px 0 0 12px;
+            }
+          }
+        }
+      }
+    }
+  }
+  
+}

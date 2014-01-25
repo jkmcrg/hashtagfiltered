@@ -1,0 +1,51 @@
+.backend_article_submissions {
+  ul.submissions {
+    padding: 0px;
+    li.submission {
+      position: relative;
+      list-style: none;
+      padding: 15px;
+      padding-left: 20px;
+      background-color: #fff;
+      h3 {
+      }
+      &.odd {
+        @include transition_in_out(0.1s);
+      }
+      &:hover {
+        @include transition_in_out(0.1s);
+      }
+      .link {
+        width: 500px;
+        display: block;
+        @include truncate_text();
+        margin-bottom: 5px;
+        margin-top: 0px;
+      }
+      .delete {
+        position: absolute;
+        right: 15px;
+        top: 18px;
+      }
+      .tip_man {
+        margin-bottom: 9px;
+        p.info {
+          margin: 0px;
+          .name {
+            display: inline;
+          }
+          .quote {
+            display: inline;
+          }
+        }
+        p.contact {
+          margin: 0px;
+          display: block;
+        }
+      }
+    }
+  }
+  .article_submission_add_form {
+    display: none;
+  }
+}

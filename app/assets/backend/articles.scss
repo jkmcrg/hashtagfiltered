@@ -1,0 +1,251 @@
+.backend_articles {
+  
+  .right {
+    .slide_holder {
+      &.active {
+        position: fixed;
+        width: 245px;
+      }
+    }
+
+    p a.button {
+      width: 188px;
+
+      &.current {
+        @include opacity(0.5,50);
+      }
+      &.small {
+        width: auto;
+      }
+    }
+    
+    .short_url {
+      input[type="text"] {
+        padding: 0 0 2px 0;
+        margin: 0 0 10px -3px;
+        width: 240px;
+        font-family: "proxima-nova-alt", "Helvetica Neue", helvetica, arial, sans-serif;
+        font-size: 14px;
+        border: 0;
+        border-bottom: 1px solid #eaeaea;
+        
+        &:focus {
+          outline: none;
+          border-bottom: 1px solid #048fdf;
+        }
+      }
+    }
+  }
+  
+  .ride_poly {
+    width: 100%;
+  }
+
+  &.index {
+    .posts {
+      h3 {
+        margin: 18px 0 18px 0;
+        padding: 0;
+      }
+      h3 a {
+        display: block;
+        margin: 0 -6px 0 -6px;
+        padding: 6px 6px 6px 6px;
+        text-decoration: none;
+        font-weight: normal;
+        span {
+          display: inline-block;
+          padding-right: 45px;
+          width: 380px;
+        }
+        em {
+          display: inline-block;
+          color: #666;
+          width: 160px;
+        }
+        strong {
+          display: inline-block;
+          font-weight: normal;
+          width: 190px;
+        }
+        
+        &.draft {
+          color: #666;
+          
+          &:hover {
+            span, strong {
+              color: #fff;
+            }
+          }
+        }
+      }
+    }
+  }
+  
+  &.detail {
+    .right {
+      .publish_date {
+        input[type="text"] {
+          width: 225px;
+        }
+      }
+      .authors {
+        label {
+          display: inline;
+        }
+        select {
+          padding: 0;
+          margin: 0;
+          font-size: 13px;
+          line-height: 18px;
+          font-weight: bold;
+          -webkit-appearance: none;
+          -webkit-border-radius: 0px;
+          border: 0;
+          background: none;
+        }
+        input[type="text"] {
+          @include border_radius(0);
+          border: 0;
+          border-bottom: 1px solid #ccc;
+        }
+      }
+    }
+    .left {
+      .article_submission {
+        position: relative;
+        padding: 10px;
+        margin: 20px 0;
+        overflow: hidden;
+        background: #eee;
+        @include transition_in_out(0.5s);
+        &.closed {
+          max-height: 35px !important;
+          .article_submission_toggle {
+            .closed { display: none; }
+            .open { display: inline; }
+          }
+        }
+        &.open {
+          .article_submission_toggle {
+            .closed { display: inline; }
+            .open { display: none; }
+          }
+        }
+        h1 {
+          position: relative;
+          z-index: 1;
+          margin: 0px;
+          margin-bottom: 10px;
+          cursor: pointer;
+        }
+        ul {
+          li {
+            h3 { 
+              display: inline;
+              margin-right: 5px;
+            }
+          }
+        }
+        .article_submission_toggle {
+          width: 60px;
+          height: 60px;
+          position: absolute;
+          right: 15px;
+          top: 15px;
+          font-size: 30px;
+          text-align: center;
+        }
+      }
+      .title_category.edit_section form {
+        input[type="text"] {
+          padding-left: 108px;
+          margin-right: -108px;
+        }
+        select {
+          padding: 0;
+          margin-left: 108px;
+          -webkit-appearance: none;
+          -webkit-border-radius: 0px;
+          background: none;
+        }
+      }
+      .body {
+        .edit_container {
+          img {
+            position: relative;
+            width: 100%;
+          }
+        }
+      }
+      .video.edit_section form {
+        input[type="text"] {
+          padding-left: 180px;
+          margin-right: -180px;
+        }
+      }
+      .related {
+        form {
+          .post {
+            width: 400px;
+            float: left;
+            
+            select {
+              font-size: 18px;
+              width: 245px;
+            }
+            label {
+              display: inline;
+            }              
+          }
+        }
+      }
+    }
+    
+    // date picker hacks
+    
+    .ui-datepicker {
+      font-family: "proxima-nova-alt", "Helvetica Neue", helvetica, arial, sans-serif;
+    }
+  }
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

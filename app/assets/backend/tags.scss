@@ -1,0 +1,138 @@
+.backend_tags {
+  
+  &.index {
+    .left {
+      ul {
+        font-size: 20px;
+        line-height: 26px;
+        li {
+          margin: 6px;
+          padding: 3px;
+        }
+        &#tags {
+          text-transform: lowercase;
+          
+          li {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+            
+            a {
+              padding: 8px;
+              margin: 0 8px 8px 0;
+              display: inline-block;
+              text-decoration: none;
+              border: 2px solid #ccc;
+              @include border_radius(8px);
+              float: left;
+              
+              &:hover {
+                border-color: #000
+              }
+            }
+          }
+        }
+      }
+      .edit_section {
+        &.tag form {
+          input[type="text"] {
+            padding-left: 108px;
+            margin-right: -108px;
+          }
+          
+          .actions {
+            a.button {
+              width: 50px;
+              color: #fff;
+              
+              &.delete {
+                margin-top: -58px;
+                width: 30px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  
+}
+
+
+ul.tag_list {
+  font-size: 20px;
+  line-height: 26px;
+  text-transform: lowercase;
+  
+  li {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    
+    a {
+      padding: 8px;
+      margin: 0 8px 8px 0;
+      display: inline-block;
+      text-decoration: none;
+      border: 2px solid #ccc;
+      @include border_radius(8px);
+      float: left;
+      
+      &:hover {
+        border-color: #000
+      }
+    }
+  }
+  
+  &.active {
+    li a {
+      color: #39b267;
+      border-color: #39b267;
+      
+      &:hover {
+        color: #fff;
+        background-color: red;
+        border-color: red;
+      }
+    }
+  }
+}
+
+form#tag_search_add {
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
