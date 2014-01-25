@@ -1,2 +1,23 @@
 #header
-  %h1 Haha, right
+  .stripe
+    = image_tag "insta_stripe.svg"
+  .header_text
+    %h1 Haha, right
+
+#main
+  #left
+    %ul.tags
+      %li #iamacat
+      %li #noreally
+      %li #llikatme
+      %li #hashtat
+      %li.this_guy #nofilter
+      %li #manimgreat
+  #middle
+    .featured_lie
+      = image_tag "examples/insta.jpg"
+  #right
+    .filter_name
+      %h2 Sepia
+    %button.vote.pass Passable
+    %button.vote.dream You're Dreamin

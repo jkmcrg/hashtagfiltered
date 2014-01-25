@@ -1,3 +1,97 @@
 body {
   background-color: $lightBrown;
 }
+#container {
+  width: 850px;
+  margin: 0 auto;
+  #header {
+    position: relative;
+    .stripe {
+      position: absolute;
+      top: -30px;
+    }
+    .header_text {
+      width: 100%;
+      text-align: center;
+      padding-top: 14px;
+      h1 {
+        font-size: 72px;
+        color: $brown;
+      }
+    }
+  }
+  #main {
+    padding-top: 80px;
+    #left, #middle, #right {
+      @include box_sizing_inset;
+      height: 40px;
+      float: left;
+    }
+    #left, #right {
+      width: 25%;
+    }
+    #middle {
+      width: 50%;
+      .featured_lie {
+        width: 100%;
+        padding: 0px 15px;
+        @include box_sizing_inset;
+        img {
+          width: 100%;
+        }
+      }
+    }
+    #left {
+      .tags {
+        font-family: 'Inconsolata', sans-serif;
+        li {
+          color: $white;
+          font-size: 24px;
+          &.this_guy {
+            color: $yellow;
+          }
+        }
+      }
+    }
+    #right {
+      padding-left: 10px;
+      .filter_name {
+        padding: 20px 0;
+        h2 {
+          font-size: 36px;
+          color: $white;
+          text-align: center;
+        }
+      }
+      .vote {
+        display: block;
+        background-color: $medBrown;
+        @include border_radius(15px);
+        font-family: 'Satisfy', cursive;
+        font-size: 24px;
+        width: 100%;
+        padding: 10px;
+        margin-top: 20px;
+        cursor: pointer;
+        &:hover {
+          background-color: $lightBrown + 50;
+          &.pass, &.dream {
+            color: $brown;
+          }
+        }
+        &:active {
+           background-color: $brown;
+           &.pass, &.dream {
+             color: $lightBrown + 50;
+           }
+        }
+        &.pass {
+          color: $green;
+        }
+        &.dream {
+          color: $red;
+        }
+      }
+    }
+  }
+}
