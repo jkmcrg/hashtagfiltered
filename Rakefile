@@ -3,4 +3,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-Hashtagfilter::Application.load_tasks
+HashTagFiltered::Application.load_tasks
