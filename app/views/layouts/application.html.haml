@@ -5,5 +5,7 @@
     = stylesheet_link_tag    "htf", media: "all"
     = javascript_include_tag "htf"
     = csrf_meta_tags
+    = analytics_init if Rails.env.production?
+
   %body
     = yield

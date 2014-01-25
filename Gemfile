@@ -13,7 +13,13 @@ gem 'haml-rails'
 gem 'uglifier', '>= 1.3.0'
 gem 'erb2haml'
 
-# Libraries
+# monitoring
+gem 'google-analytics-rails'
+
+# libraries
 gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 1.2'
+
+# utilities
+gem 'pry'
