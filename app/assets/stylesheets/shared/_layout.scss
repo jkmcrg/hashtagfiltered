@@ -48,12 +48,18 @@ body {
       }
     }
     #left {
-      .tags {
-        font-family: 'Inconsolata', sans-serif;
-        li {
-          color: $white;
-          font-size: 24px;
+      font-family: 'Inconsolata', sans-serif;
+      color: $white;
+      font-size: 24px;
+      .handle {
+        color: $brown;
+        margin-top: 15px;
+      }
+      .caption {
+        margin-top: 15px;
+        p {
           &.this_guy {
+            display: inline;
             color: $yellow;
           }
         }
