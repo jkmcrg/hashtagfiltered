@@ -5,15 +5,21 @@ body {
   width: 850px;
   margin: 0 auto;
   #header {
-    position: relative;
+    width: 100%;
+    position: fixed;
+    left: 0px;
+    padding: 4px;
+    background-color: $lightBrown;
     .stripe {
       position: absolute;
-      top: -30px;
+      left: 50%;
+      margin-left: -420px;
+      top: -40px;
     }
     .header_text {
       width: 100%;
       text-align: center;
-      padding-top: 14px;
+      padding-top: 5px;
       h1 {
         font-size: 72px;
         color: $brown;
@@ -21,7 +27,7 @@ body {
     }
   }
   #main {
-    padding-top: 80px;
+    padding-top: 180px;
     #left, #middle, #right {
       @include box_sizing_inset;
       height: 40px;
@@ -63,33 +69,18 @@ body {
           text-align: center;
         }
       }
-      .vote {
+      button {
         display: block;
-        background-color: $medBrown;
+        background-color: $darkBrown;
         @include border_radius(15px);
         font-family: 'Satisfy', cursive;
         font-size: 24px;
         width: 100%;
-        padding: 10px;
+        padding: 11px 0 9px;
         margin-top: 20px;
         cursor: pointer;
-        &:hover {
-          background-color: $lightBrown + 50;
-          &.pass, &.dream {
-            color: $brown;
-          }
-        }
-        &:active {
-           background-color: $brown;
-           &.pass, &.dream {
-             color: $lightBrown + 50;
-           }
-        }
-        &.pass {
-          color: $green;
-        }
-        &.dream {
-          color: $red;
+        &.twitter {
+          color: $blue;
         }
       }
     }
